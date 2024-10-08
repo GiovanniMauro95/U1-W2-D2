@@ -2,25 +2,45 @@
  Scrivi un algoritmo per trovare il più grande tra due numeri interi.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let num1 = 10
+let num2 = 12
+
+if (num1 > num2) {
+  console.log(num1)
+} else num2 > num1
+console.log(num2)
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let num3 = 5
+if (num3 !== 5) {
+  console.log("notequal")
+}
 
 /* ESERCIZIO 3
   Scrivi un algoritmo che mostri "divisibile per 5" in console se un numero fornito è perfettamente divisibile per 5 (suggerimento: usa l'operatore modulo)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let num4 = 25
+if (num4 % 5 === 0) {
+  console.log("Divisibile per 5")
+} else {
+  console.log("Non divisibile per 5")
+}
 
 /* ESERCIZIO 4
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let num5 = 16
+let num6 = 29
+if (num5 === 8 || num6 === 8 || num5 + num6 === 8 || num5 - num6 === 8) {
+  console.log("Condizione raggiunta")
+} else {
+  console.log("Condizione non raggiunta")
+}
 
 /* ESERCIZIO 5
   Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
@@ -75,11 +95,11 @@
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
 
-const me = {
-  name: 'John',
-  lastName: 'Doe',
-  skills: ['javascript', 'html', 'css'],
-}
+// const me = {
+//   name: 'John',
+//   lastName: 'Doe',
+//   skills: ['javascript', 'html', 'css'],
+// }
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
