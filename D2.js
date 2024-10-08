@@ -48,14 +48,16 @@ if (num5 === 8 || num6 === 8 || num5 + num6 === 8 || num5 - num6 === 8) {
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let totalShoppingCart = 60
+const discount = 10
+if (totalShoppingCart >= 50) {
+  console.log("Spedizione Gratuita")
+} else console.log(totalShoppingCart + discount)
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
-
-/* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
@@ -63,31 +65,73 @@ if (num5 === 8 || num6 === 8 || num5 + num6 === 8 || num5 - num6 === 8) {
   Alla fine mostra il risultato in console.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
-
+let firstnum = 1
+let secondnum = 2
+let thirdnum = 3
+let first, second, third
+if (firstnum > secondnum && firstnum > thirdnum) {
+  first = firstnum
+  if (secondnum > thirdnum) {
+    second = secondnum
+    third = thirdnum
+  } else {
+    second = thirdnum
+    third = secondnum
+  }
+} else if (secondnum > firstnum && secondnum > thirdnum) {
+  first = secondnum
+  if (firstnum > thirdnum) {
+    second = firstnum
+    third = thirdnum
+  } else {
+    second = thirdnum
+    third = firstnum
+  }
+} else {
+  first = thirdnum
+  if (firstnum > secondnum) {
+    second = firstnum
+    third = secondnum
+  } else {
+    second = secondnum
+    third = firstnum
+  }
+}
+console.log(first, second, third)
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let num10 = 10
+if (typeof num10 === "number") {
+  console.log("Il valore è un numero")
+} else {
+  typeof num10 !== "number"
+  console.log("Il valore non è un numero")
+}
 
 /* ESERCIZIO 9
   Crea un algoritmo per controllare se un numero fornito sia pari o dispari (suggerimento: cerca l'operatore modulo su un motore di ricerca)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let num11 = 12
+if (num11 % 2 === 0) {
+  console.log("Il numero è pari")
+} else {
+  console.log("Il numero è dispari")
+}
 
 /* ESERCIZIO 10
-  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
-  let val = 7
-  if (val < 10) {
-      console.log("Meno di 10");
-    } else if (val < 5) {
-      console.log("Meno di 5");
-    } else {
-      console.log("Uguale a 10 o maggiore");
-    }
-*/
+  Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.*/
+let val = 7
+if (val < 10) {
+  console.log("Meno di 10")
+} else if (val > 5) {
+  console.log("Maggiore di 5")
+} else {
+  val >= 10
+  console.log("Uguale a 10 o maggiore")
+}
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -95,11 +139,12 @@ if (num5 === 8 || num6 === 8 || num5 + num6 === 8 || num5 - num6 === 8) {
   Fornito il seguente oggetto, scrivi del codice per aggiungere una proprietà "city", il cui valore sarà "Toronto".
 */
 
-// const me = {
-//   name: 'John',
-//   lastName: 'Doe',
-//   skills: ['javascript', 'html', 'css'],
-// }
+const me = {
+  name: "John",
+  lastName: "Doe",
+  skills: ["javascript", "html", "css"],
+}
+me.city = "Toronto"
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
@@ -107,22 +152,33 @@ if (num5 === 8 || num6 === 8 || num5 + num6 === 8 || num5 - num6 === 8) {
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere la proprietà "lastName".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+delete me.lastName
 
 /* ESERCIZIO 13
   Lavorando sempre sull'oggetto precedentemente fornito, scrivi del codice per rimuovere l'ultimo elemento della proprietà "skills".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+delete me.skills[2]
 
 /* ESERCIZIO 14
   Scrivi del codice per creare un array inizialmente vuoto. Riempilo successivamente con i numeri da 1 a 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+let numbers = []
+numbers.push(1)
+numbers.push(2)
+numbers.push(3)
+numbers.push(4)
+numbers.push(5)
+numbers.push(6)
+numbers.push(7)
+numbers.push(8)
+numbers.push(9)
+numbers.push(10)
+console.log(numbers)
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+numbers[9] = 100
