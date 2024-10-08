@@ -48,17 +48,26 @@ if (num5 === 8 || num6 === 8 || num5 + num6 === 8 || num5 - num6 === 8) {
   Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
 
-let totalShoppingCart = 60
-const discount = 10
-if (totalShoppingCart >= 50) {
+let total = 20
+const shipping = 10
+let totalCost
+if (total >= 50) {
   console.log("Spedizione Gratuita")
-} else console.log(totalShoppingCart + discount)
+} else console.log(total + shipping)
 
 /* ESERCIZIO 6
   Stai lavorando su un sito di e-commerce. Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando come prima se le spedizioni sono gratuite oppure no e e calcolando il totale.
 */
-
+const discount = 0.2
+let discountTotal = total * (1 - discount)
+console.log("Totale compreso lo sconto del 20%: " + discountTotal)
+if (discountTotal >= 50) {
+  console.log("Spedizione Gratuita")
+} else {
+  totalCost = discountTotal + shipping
+  console.log(totalCost)
+}
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
